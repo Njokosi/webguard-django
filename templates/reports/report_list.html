@@ -1,0 +1,9 @@
+{% extends 'dashboard/base.html' %}
+<h1>
+    My Reports
+</h1>
+{% block dashboard %}
+    {% for report in object_list %}
+        <li>{{ report.title }}</li>
+    {% endfor %}
+{% endblock %}
